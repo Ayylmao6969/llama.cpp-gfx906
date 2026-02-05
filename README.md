@@ -1,3 +1,34 @@
+```
+mkdir rocmbuild
+cd rocmbuild
+
+cmake -S .. -B build -G Ninja ^
+-DGPU_TARGETS=gfx906 ^
+-DGGML_HIP=ON ^
+-DCMAKE_C_COMPILER=clang ^
+-DCMAKE_CXX_COMPILER=clang++ ^
+-DCMAKE_HIP_COMPILER_FORCED=1 ^
+-DCMAKE_BUILD_TYPE=Release ^
+-DCMAKE_SHARED_LINKER_FLAGS="-Xlinker /force:multiple" ^
+-DCMAKE_EXE_LINKER_FLAGS="-Xlinker /force:multiple" ^
+-DCMAKE_HIP_FLAGS="-Wno-ignored-attributes -Wnested-anon-types -Wno-cuda-compat -Wno-unused-result" ^
+-DGGML_HIP_GRAPHS=ON ^
+-DGGML_HIP_NO_VMM=ON ^
+-DGGML_HIP_EXPORT_METRICS=ON ^
+-DGGML_NATIVE=ON ^
+-DGGML_CUDA_NO_PEER_COPY=ON ^
+-DLLAMA_BUILD_SERVER=ON ^
+-DLLAMA_BUILD_EXAMPLES=ON ^
+-DLLAMA_BUILD_TOOLS=ON ^
+-DLLAMA_BUILD_TESTS=OFF ^
+-DLLAMA_CURL=ON ^
+-DLLAMA_STATIC=OFF 
+
+..
+
+cmake --build build --config Release -j 12
+```
+
 # TESTING NEEDED: this version has some bugs that seems to be affecting output correctness. Its an experimental build, use at your risk until will be fixed! 
 
 
