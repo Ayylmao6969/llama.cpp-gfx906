@@ -1,7 +1,8 @@
 ```
 mkdir rocmbuild
 cd rocmbuild
-
+```
+```
 cmake -S .. -B build -G Ninja ^
 -DGPU_TARGETS=gfx906 ^
 -DGGML_HIP=ON ^
@@ -26,6 +27,8 @@ cmake -S .. -B build -G Ninja ^
 
 ..
 
+```
+```
 cmake --build build --config Release -j 12
 ```
 
