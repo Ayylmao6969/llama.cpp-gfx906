@@ -161,22 +161,31 @@ llm_build_kimi_linear::llm_build_kimi_linear(const llama_model & model, const ll
             g1 = ggml_mul(ctx0, g1, A);
             cb(g1, "kda_g1", il);
 
+            g1 = ggml_reshape_4d(ctx0, g1, head_dim, n_head, n_seq_tokens, n_seqs);
+
             // Compute beta (mixing coefficient)
             ggml_tensor * beta = ggml_mul_mat(ctx0, layer.ssm_beta, cur);
-            beta = ggml_reshape_4d(ctx0, beta, n_head, 1, n_seq_tokens, n_seqs);
+            beta = ggml_reshape_4d(ctx0, beta, 1, n_head, n_seq_tokens, n_seqs);
             cb(beta, "kda_beta", il);
+
+            beta = ggml_sigmoid(ctx0, beta);
 
             // Reshape for KDA recurrence
             // {n_embd, n_tokens} -> {n_embd, n_seq_tokens, n_seqs}
             cur = ggml_reshape_3d(ctx0, cur, cur->ne[0], n_seq_tokens, n_seqs);
 
-            g1 = ggml_reshape_4d(ctx0, g1, head_dim, n_head, n_seq_tokens, n_seqs);
-
             // Get SSM state and compute KDA recurrence using ggml_kda_scan
             ggml_tensor * ssm_states_all = mctx_cur->get_s_l(il);
             ggml_tensor * state = build_rs(inp_rs, ssm_states_all, hparams.n_embd_s(), n_seqs);
             state = ggml_reshape_4d(ctx0, state, head_dim, head_dim, n_head, n_seqs);
-            // Choose between build_kda_chunking and build_kda_recurrent based on n_tokens
+
+            const float eps_norm = hparams.f_norm_rms_eps;
+
+            Qcur = ggml_l2_norm(ctx0, Qcur, eps_norm);
+            Kcur = ggml_l2_norm(ctx0, Kcur, eps_norm);
+
+            // Choose between build_delta_net_chunking and build_delta_net_recurrent based on n_tokens
+
             std::pair<ggml_tensor *, ggml_tensor *> attn_out = n_seq_tokens == 1 ?
                 build_kda_autoregressive(Qcur, Kcur, Vcur, g1, beta, state, il) :
                 build_kda_chunking(Qcur, Kcur, Vcur, g1, beta, state, chunked_causal_mask, chunked_identity, chunked_diag_mask, il);
