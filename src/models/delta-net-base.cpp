@@ -49,22 +49,22 @@ std::pair<ggml_tensor *, ggml_tensor *> llm_build_delta_net_base::build_delta_ne
     cb(b, "b_in", il);
     cb(g, "g_in", il);
 
-    q = ggml_permute(ctx0, q, 0, 2, 1, 3); // [S_k, n_tokens, H_k, n_seqs]
-    k = ggml_permute(ctx0, k, 0, 2, 1, 3); // [S_k, n_tokens, H_k, n_seqs]
-    v = ggml_permute(ctx0, v, 0, 2, 1, 3); // [S_v, n_tokens, H_v, n_seqs]
-    g = ggml_permute(ctx0, g, 2, 1, 3, 0); // [  1, n_tokens, H_v, n_seqs]
-    b = ggml_permute(ctx0, b, 2, 0, 1, 3); // [  1, n_tokens, H_v, n_seqs]
+    q = ggml_cont(ctx0, ggml_permute(ctx0, q, 0, 2, 1, 3)); // [S_k, n_tokens, H_k, n_seqs]
+    k = ggml_cont(ctx0, ggml_permute(ctx0, k, 0, 2, 1, 3)); // [S_k, n_tokens, H_k, n_seqs]
+    v = ggml_cont(ctx0, ggml_permute(ctx0, v, 0, 2, 1, 3)); // [S_v, n_tokens, H_v, n_seqs]
+    g = ggml_cont(ctx0, ggml_permute(ctx0, g, 2, 1, 3, 0)); // [  1, n_tokens, H_v, n_seqs]
+    b = ggml_cont(ctx0, ggml_permute(ctx0, b, 2, 0, 1, 3)); // [  1, n_tokens, H_v, n_seqs]
 
     const int CS = CHUNK_SIZE;
 
     const int pad = (CS - n_tokens % CS) % CS;
     const int n_chunks = (n_tokens + pad) / CS;
 
-    q = ggml_pad(ctx0, q, 0, pad, 0, 0);
-    k = ggml_pad(ctx0, k, 0, pad, 0, 0);
-    v = ggml_pad(ctx0, v, 0, pad, 0, 0);
-    g = ggml_pad(ctx0, g, 0, pad, 0, 0);
-    b = ggml_pad(ctx0, b, 0, pad, 0, 0);
+    q = ggml_cont(ctx0, ggml_pad(ctx0, q, 0, pad, 0, 0));
+    k = ggml_cont(ctx0, ggml_pad(ctx0, k, 0, pad, 0, 0));
+    v = ggml_cont(ctx0, ggml_pad(ctx0, v, 0, pad, 0, 0));
+    g = ggml_cont(ctx0, ggml_pad(ctx0, g, 0, pad, 0, 0));
+    b = ggml_cont(ctx0, ggml_pad(ctx0, b, 0, pad, 0, 0));
 
     ggml_tensor * v_b = ggml_mul(ctx0, v, b);
     ggml_tensor * k_b = ggml_mul(ctx0, k, b);

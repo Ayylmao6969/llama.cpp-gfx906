@@ -1,0 +1,790 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.19044 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files/AMD/ROCm/5.7/bin/clang.exe 
+      Build flags: -DNDEBUG;-ffast-math;-fno-finite-math-only;-ffp-contract=fast
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+      
+      The C compiler identification is Clang, found in:
+        C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/3.31.0/CompilerIdC/a.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1288 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:250 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting C compiler /showIncludes prefix:
+        
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1288 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:250 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting C compiler /showIncludes prefix:
+        
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/AMD/ROCm/5.7/bin/clang++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      
+      The CXX compiler identification is Clang, found in:
+        C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/3.31.0/CompilerIdCXX/a.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1288 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:250 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1288 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:250 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-315jmy"
+      binary: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-315jmy"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "-DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd"
+      CMAKE_EXE_LINKER_FLAGS: "-Xlinker /force:multiple"
+      CMAKE_HIP_ARCHITECTURES: "gfx906"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-315jmy'
+        
+        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_10a1c
+        [1/2] C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\clang.exe   -DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast  -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_10a1c.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_10a1c.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_10a1c.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCCompilerABI.c"
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\clang.exe -nostartfiles -nostdlib -DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast  -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /force:multiple -v  -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_10a1c.dir/CMakeCCompilerABI.c.obj -o cmTC_10a1c.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_10a1c.lib -Xlinker /pdb:cmTC_10a1c.pdb -Xlinker /version:0.0     && cd ."
+        clang version 19.0.0git (git@github.amd.com:Compute-Mirrors/llvm-project b3dbdf4f03718d63a3292f784216fddb3e73d521)
+        Target: x86_64-pc-windows-msvc
+        Thread model: posix
+        InstalledDir: C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin
+        Found HIP installation: C:\\Program Files\\AMD\\ROCm\\5.7\\, version 5.7.32000
+         "C:\\\\PROGRA~1\\\\AMD\\\\ROCm\\\\5.7\\\\bin\\\\lld-link" -out:cmTC_10a1c.exe "-libpath:C:\\\\Program Files (x86)\\\\Microsoft Visual Studio\\\\2022\\\\BuildTools\\\\VC\\\\Tools\\\\MSVC\\\\14.44.35207\\\\lib\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Microsoft Visual Studio\\\\2022\\\\BuildTools\\\\VC\\\\Tools\\\\MSVC\\\\14.44.35207\\\\atlmfc\\\\lib\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.22621.0\\\\ucrt\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.22621.0\\\\um\\\\x64" "-libpath:C:\\\\Program Files\\\\AMD\\\\ROCm\\\\5.7\\\\lib\\\\clang\\\\19\\\\lib\\\\windows" -nologo -debug /force:multiple /subsystem:console CMakeFiles/cmTC_10a1c.dir/CMakeCCompilerABI.c.obj /MANIFEST:EMBED /implib:cmTC_10a1c.lib /pdb:cmTC_10a1c.pdb /version:0.0
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/PROGRA~1/AMD/ROCm/5.7/bin/lld-link
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "C:/PROGRA~1/AMD/ROCm/5.7/bin/lld-link" "-v"
+      lld-link: warning: ignoring unknown argument '-v'
+      lld-link: error: no input files
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "C:/PROGRA~1/AMD/ROCm/5.7/bin/lld-link" "-V"
+      lld-link: warning: ignoring unknown argument '-V'
+      lld-link: error: no input files
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "C:/PROGRA~1/AMD/ROCm/5.7/bin/lld-link" "--version"
+      LLD 17.0.0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-1haa4d"
+      binary: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-1haa4d"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "-Xlinker /force:multiple"
+      CMAKE_HIP_ARCHITECTURES: "gfx906"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-1haa4d'
+        
+        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_032de
+        [1/2] C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\CLANG_~1.EXE   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_032de.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_032de.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_032de.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp"
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\CLANG_~1.EXE -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /force:multiple -v  -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_032de.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_032de.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_032de.lib -Xlinker /pdb:cmTC_032de.pdb -Xlinker /version:0.0     && cd ."
+        clang version 19.0.0git (git@github.amd.com:Compute-Mirrors/llvm-project b3dbdf4f03718d63a3292f784216fddb3e73d521)
+        Target: x86_64-pc-windows-msvc
+        Thread model: posix
+        InstalledDir: C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin
+        Found HIP installation: C:\\Program Files\\AMD\\ROCm\\5.7\\, version 5.7.32000
+         "C:\\\\PROGRA~1\\\\AMD\\\\ROCm\\\\5.7\\\\bin\\\\lld-link" -out:cmTC_032de.exe "-libpath:C:\\\\Program Files (x86)\\\\Microsoft Visual Studio\\\\2022\\\\BuildTools\\\\VC\\\\Tools\\\\MSVC\\\\14.44.35207\\\\lib\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Microsoft Visual Studio\\\\2022\\\\BuildTools\\\\VC\\\\Tools\\\\MSVC\\\\14.44.35207\\\\atlmfc\\\\lib\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.22621.0\\\\ucrt\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.22621.0\\\\um\\\\x64" "-libpath:C:\\\\Program Files\\\\AMD\\\\ROCm\\\\5.7\\\\lib\\\\clang\\\\19\\\\lib\\\\windows" -nologo -debug /force:multiple /subsystem:console CMakeFiles/cmTC_032de.dir/CMakeCXXCompilerABI.cpp.obj /MANIFEST:EMBED /implib:cmTC_032de.lib /pdb:cmTC_032de.pdb /version:0.0
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/PROGRA~1/AMD/ROCm/5.7/bin/lld-link
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/PROGRA~1/AMD/ROCm/5.7/bin/lld-link" "-v"
+      lld-link: warning: ignoring unknown argument '-v'
+      lld-link: error: no input files
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/PROGRA~1/AMD/ROCm/5.7/bin/lld-link" "-V"
+      lld-link: warning: ignoring unknown argument '-V'
+      lld-link: error: no input files
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/PROGRA~1/AMD/ROCm/5.7/bin/lld-link" "--version"
+      LLD 17.0.0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/FeatureTesting.cmake:34 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/FeatureTesting.cmake:87 (_record_compiler_features)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake:124 (_record_compiler_features_cxx)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerSupport.cmake:70 (cmake_record_cxx_compile_features)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:83 (CMAKE_DETERMINE_COMPILER_SUPPORT)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compile features"
+    directories:
+      source: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-yjdbvy"
+      binary: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-yjdbvy"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd"
+      CMAKE_EXE_LINKER_FLAGS: "-Xlinker /force:multiple"
+      CMAKE_HIP_ARCHITECTURES: "gfx906"
+    buildResult:
+      variable: "CMAKE_CXX_FEATURE_TEST"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-yjdbvy'
+        
+        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_15a99
+        [1/2] C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\CLANG_~1.EXE   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -std=c++14 -MD -MT CMakeFiles/cmTC_15a99.dir/feature_tests.cxx.obj -MF CMakeFiles\\cmTC_15a99.dir\\feature_tests.cxx.obj.d -o CMakeFiles/cmTC_15a99.dir/feature_tests.cxx.obj -c C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-yjdbvy/feature_tests.cxx
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\CLANG_~1.EXE -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /force:multiple   -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_15a99.dir/feature_tests.cxx.obj -o cmTC_15a99.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_15a99.lib -Xlinker /pdb:cmTC_15a99.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/FeatureTesting.cmake:34 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/FeatureTesting.cmake:87 (_record_compiler_features)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake:132 (_record_compiler_features_cxx)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerSupport.cmake:70 (cmake_record_cxx_compile_features)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:83 (CMAKE_DETERMINE_COMPILER_SUPPORT)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compile features"
+    directories:
+      source: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-e4q580"
+      binary: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-e4q580"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd"
+      CMAKE_EXE_LINKER_FLAGS: "-Xlinker /force:multiple"
+      CMAKE_HIP_ARCHITECTURES: "gfx906"
+    buildResult:
+      variable: "CMAKE_CXX_FEATURE_TEST"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-e4q580'
+        
+        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_1d964
+        [1/2] C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\CLANG_~1.EXE   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -std=c++14 -MD -MT CMakeFiles/cmTC_1d964.dir/feature_tests.cxx.obj -MF CMakeFiles\\cmTC_1d964.dir\\feature_tests.cxx.obj.d -o CMakeFiles/cmTC_1d964.dir/feature_tests.cxx.obj -c C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-e4q580/feature_tests.cxx
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\CLANG_~1.EXE -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /force:multiple   -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_1d964.dir/feature_tests.cxx.obj -o cmTC_1d964.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_1d964.lib -Xlinker /pdb:cmTC_1d964.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "ggml/CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      clang version 19.0.0git (git@github.amd.com:Compute-Mirrors/llvm-project b3dbdf4f03718d63a3292f784216fddb3e73d521)
+      Target: x86_64-pc-windows-msvc
+      Thread model: posix
+      InstalledDir: C:\\Program Files\\AMD\\ROCm\\5.7\\bin
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "ggml/CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the ASM compiler is AppleClang using "--version" did not match "(Apple (clang|LLVM) version)":
+      clang version 19.0.0git (git@github.amd.com:Compute-Mirrors/llvm-project b3dbdf4f03718d63a3292f784216fddb3e73d521)
+      Target: x86_64-pc-windows-msvc
+      Thread model: posix
+      InstalledDir: C:\\Program Files\\AMD\\ROCm\\5.7\\bin
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1237 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "ggml/CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the ASM compiler is Clang using "--version" matched "(clang version)":
+      clang version 19.0.0git (git@github.amd.com:Compute-Mirrors/llvm-project b3dbdf4f03718d63a3292f784216fddb3e73d521)
+      Target: x86_64-pc-windows-msvc
+      Thread model: posix
+      InstalledDir: C:\\Program Files\\AMD\\ROCm\\5.7\\bin
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "ggml/CMakeLists.txt:283 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-f3y3lm"
+      binary: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-f3y3lm"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "-DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd"
+      CMAKE_EXE_LINKER_FLAGS: "-Xlinker /force:multiple"
+      CMAKE_HIP_ARCHITECTURES: "gfx906"
+      CMAKE_MODULE_PATH: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/cmake/"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-f3y3lm'
+        
+        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_90457
+        [1/2] C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\clang.exe -DCMAKE_HAVE_LIBC_PTHREAD  -DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast  -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu11 -MD -MT CMakeFiles/cmTC_90457.dir/src.c.obj -MF CMakeFiles\\cmTC_90457.dir\\src.c.obj.d -o CMakeFiles/cmTC_90457.dir/src.c.obj -c C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-f3y3lm/src.c
+        FAILED: [code=1] CMakeFiles/cmTC_90457.dir/src.c.obj 
+        C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\clang.exe -DCMAKE_HAVE_LIBC_PTHREAD  -DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast  -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu11 -MD -MT CMakeFiles/cmTC_90457.dir/src.c.obj -MF CMakeFiles\\cmTC_90457.dir\\src.c.obj.d -o CMakeFiles/cmTC_90457.dir/src.c.obj -c C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-f3y3lm/src.c
+        C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-f3y3lm/src.c:1:10: fatal error: 'pthread.h' file not found
+            1 | #include <pthread.h>
+              |          ^~~~~~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:136 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:169 (_threads_check_flag_pthread)"
+      - "ggml/CMakeLists.txt:283 (find_package)"
+    checks:
+      - "Check if compiler accepts -pthread"
+    directories:
+      source: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-08ioxh"
+      binary: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-08ioxh"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "-DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd"
+      CMAKE_EXE_LINKER_FLAGS: "-Xlinker /force:multiple"
+      CMAKE_HIP_ARCHITECTURES: "gfx906"
+      CMAKE_MODULE_PATH: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/cmake/"
+    buildResult:
+      variable: "THREADS_HAVE_PTHREAD_ARG"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-08ioxh'
+        
+        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_70901
+        [1/2] C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\clang.exe   -DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast  -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu11 -MD -MT CMakeFiles/cmTC_70901.dir/CheckForPthreads.c.obj -MF CMakeFiles\\cmTC_70901.dir\\CheckForPthreads.c.obj.d -o CMakeFiles/cmTC_70901.dir/CheckForPthreads.c.obj -c C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-08ioxh/CheckForPthreads.c
+        FAILED: [code=1] CMakeFiles/cmTC_70901.dir/CheckForPthreads.c.obj 
+        C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\clang.exe   -DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast  -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu11 -MD -MT CMakeFiles/cmTC_70901.dir/CheckForPthreads.c.obj -MF CMakeFiles\\cmTC_70901.dir\\CheckForPthreads.c.obj.d -o CMakeFiles/cmTC_70901.dir/CheckForPthreads.c.obj -c C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-08ioxh/CheckForPthreads.c
+        C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-08ioxh/CheckForPthreads.c:1:10: fatal error: 'pthread.h' file not found
+            1 | #include <pthread.h>
+              |          ^~~~~~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "ggml/CMakeLists.txt:283 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-7myicm"
+      binary: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-7myicm"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "-DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd"
+      CMAKE_EXE_LINKER_FLAGS: "-Xlinker /force:multiple"
+      CMAKE_HIP_ARCHITECTURES: "gfx906"
+      CMAKE_MODULE_PATH: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/cmake/"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-7myicm'
+        
+        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_b871f
+        [1/2] C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\clang.exe   -DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast -DCHECK_FUNCTION_EXISTS=pthread_create -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu11 -MD -MT CMakeFiles/cmTC_b871f.dir/CheckFunctionExists.c.obj -MF CMakeFiles\\cmTC_b871f.dir\\CheckFunctionExists.c.obj.d -o CMakeFiles/cmTC_b871f.dir/CheckFunctionExists.c.obj -c C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-7myicm/CheckFunctionExists.c
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\clang.exe -nostartfiles -nostdlib -DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast -DCHECK_FUNCTION_EXISTS=pthread_create -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /force:multiple   -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_b871f.dir/CheckFunctionExists.c.obj -o cmTC_b871f.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_b871f.lib -Xlinker /pdb:cmTC_b871f.pdb -Xlinker /version:0.0   -lpthreads.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        FAILED: [code=1] cmTC_b871f.exe 
+        C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\clang.exe -nostartfiles -nostdlib -DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast -DCHECK_FUNCTION_EXISTS=pthread_create -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /force:multiple   -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_b871f.dir/CheckFunctionExists.c.obj -o cmTC_b871f.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_b871f.lib -Xlinker /pdb:cmTC_b871f.pdb -Xlinker /version:0.0   -lpthreads.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        lld-link: error: could not open 'pthreads.lib': no such file or directory
+        clang: error: linker command failed with exit code 1 (use -v to see invocation)
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "ggml/CMakeLists.txt:283 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-4me9as"
+      binary: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-4me9as"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "-DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd"
+      CMAKE_EXE_LINKER_FLAGS: "-Xlinker /force:multiple"
+      CMAKE_HIP_ARCHITECTURES: "gfx906"
+      CMAKE_MODULE_PATH: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/cmake/"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-4me9as'
+        
+        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_20eeb
+        [1/2] C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\clang.exe   -DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast -DCHECK_FUNCTION_EXISTS=pthread_create -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu11 -MD -MT CMakeFiles/cmTC_20eeb.dir/CheckFunctionExists.c.obj -MF CMakeFiles\\cmTC_20eeb.dir\\CheckFunctionExists.c.obj.d -o CMakeFiles/cmTC_20eeb.dir/CheckFunctionExists.c.obj -c C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-4me9as/CheckFunctionExists.c
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\clang.exe -nostartfiles -nostdlib -DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast -DCHECK_FUNCTION_EXISTS=pthread_create -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /force:multiple   -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_20eeb.dir/CheckFunctionExists.c.obj -o cmTC_20eeb.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_20eeb.lib -Xlinker /pdb:cmTC_20eeb.pdb -Xlinker /version:0.0   -lpthread.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        FAILED: [code=1] cmTC_20eeb.exe 
+        C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\clang.exe -nostartfiles -nostdlib -DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast -DCHECK_FUNCTION_EXISTS=pthread_create -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /force:multiple   -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_20eeb.dir/CheckFunctionExists.c.obj -o cmTC_20eeb.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_20eeb.lib -Xlinker /pdb:cmTC_20eeb.pdb -Xlinker /version:0.0   -lpthread.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        lld-link: error: could not open 'pthread.lib': no such file or directory
+        clang: error: linker command failed with exit code 1 (use -v to see invocation)
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:71 (find_package)"
+      - "ggml/src/CMakeLists.txt:445 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-l1dj5x"
+      binary: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-l1dj5x"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "-DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd"
+      CMAKE_EXE_LINKER_FLAGS: "-Xlinker /force:multiple"
+      CMAKE_HIP_ARCHITECTURES: "gfx906"
+      CMAKE_MODULE_PATH: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/cmake/"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_fopenmplibomp"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-l1dj5x'
+        
+        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_11c86
+        [1/2] C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\clang.exe   -DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast -fopenmp=libomp -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu11 -MD -MT CMakeFiles/cmTC_11c86.dir/OpenMPTryFlag.c.obj -MF CMakeFiles\\cmTC_11c86.dir\\OpenMPTryFlag.c.obj.d -o CMakeFiles/cmTC_11c86.dir/OpenMPTryFlag.c.obj -c C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-l1dj5x/OpenMPTryFlag.c
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\clang.exe -nostartfiles -nostdlib -DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast -fopenmp=libomp -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /force:multiple   -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_11c86.dir/OpenMPTryFlag.c.obj -o cmTC_11c86.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_11c86.lib -Xlinker /pdb:cmTC_11c86.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:71 (find_package)"
+      - "ggml/src/CMakeLists.txt:445 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-flui0y"
+      binary: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-flui0y"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "-DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd"
+      CMAKE_EXE_LINKER_FLAGS: "-Xlinker /force:multiple"
+      CMAKE_HIP_ARCHITECTURES: "gfx906"
+      CMAKE_MODULE_PATH: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/cmake/"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_fopenmplibiomp5"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-flui0y'
+        
+        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_3adb0
+        [1/2] C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\clang.exe   -DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast -fopenmp=libiomp5 -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu11 -MD -MT CMakeFiles/cmTC_3adb0.dir/OpenMPTryFlag.c.obj -MF CMakeFiles\\cmTC_3adb0.dir\\OpenMPTryFlag.c.obj.d -o CMakeFiles/cmTC_3adb0.dir/OpenMPTryFlag.c.obj -c C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-flui0y/OpenMPTryFlag.c
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\clang.exe -nostartfiles -nostdlib -DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast -fopenmp=libiomp5 -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /force:multiple   -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_3adb0.dir/OpenMPTryFlag.c.obj -o cmTC_3adb0.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_3adb0.lib -Xlinker /pdb:cmTC_3adb0.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        FAILED: [code=1] cmTC_3adb0.exe 
+        C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\clang.exe -nostartfiles -nostdlib -DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast -fopenmp=libiomp5 -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /force:multiple   -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_3adb0.dir/OpenMPTryFlag.c.obj -o cmTC_3adb0.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_3adb0.lib -Xlinker /pdb:cmTC_3adb0.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        lld-link: error: could not open 'libiomp5md.lib': no such file or directory
+        clang: error: linker command failed with exit code 1 (use -v to see invocation)
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:71 (find_package)"
+      - "ggml/src/CMakeLists.txt:445 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-fgg1zj"
+      binary: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-fgg1zj"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "-DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd"
+      CMAKE_EXE_LINKER_FLAGS: "-Xlinker /force:multiple"
+      CMAKE_HIP_ARCHITECTURES: "gfx906"
+      CMAKE_MODULE_PATH: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/cmake/"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-fgg1zj'
+        
+        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_a15f5
+        [1/2] C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\clang.exe   -DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast -fopenmp -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu11 -MD -MT CMakeFiles/cmTC_a15f5.dir/OpenMPTryFlag.c.obj -MF CMakeFiles\\cmTC_a15f5.dir\\OpenMPTryFlag.c.obj.d -o CMakeFiles/cmTC_a15f5.dir/OpenMPTryFlag.c.obj -c C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-fgg1zj/OpenMPTryFlag.c
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\clang.exe -nostartfiles -nostdlib -DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast -fopenmp -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /force:multiple   -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_a15f5.dir/OpenMPTryFlag.c.obj -o cmTC_a15f5.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_a15f5.lib -Xlinker /pdb:cmTC_a15f5.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:71 (find_package)"
+      - "ggml/src/CMakeLists.txt:445 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-3u7pxh"
+      binary: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-3u7pxh"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "-DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd"
+      CMAKE_EXE_LINKER_FLAGS: "-Xlinker /force:multiple"
+      CMAKE_HIP_ARCHITECTURES: "gfx906"
+      CMAKE_MODULE_PATH: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/cmake/"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-3u7pxh'
+        
+        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_cbbeb
+        [1/2] C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\clang.exe   -DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast -Xclang -fopenmp -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu11 -MD -MT CMakeFiles/cmTC_cbbeb.dir/OpenMPTryFlag.c.obj -MF CMakeFiles\\cmTC_cbbeb.dir\\OpenMPTryFlag.c.obj.d -o CMakeFiles/cmTC_cbbeb.dir/OpenMPTryFlag.c.obj -c C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-3u7pxh/OpenMPTryFlag.c
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\clang.exe -nostartfiles -nostdlib -DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast -Xclang -fopenmp -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /force:multiple   -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_cbbeb.dir/OpenMPTryFlag.c.obj -o cmTC_cbbeb.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_cbbeb.lib -Xlinker /pdb:cmTC_cbbeb.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        FAILED: [code=1] cmTC_cbbeb.exe 
+        C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\clang.exe -nostartfiles -nostdlib -DNDEBUG -ffast-math -fno-finite-math-only -ffp-contract=fast -Xclang -fopenmp -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /force:multiple   -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_cbbeb.dir/OpenMPTryFlag.c.obj -o cmTC_cbbeb.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_cbbeb.lib -Xlinker /pdb:cmTC_cbbeb.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        lld-link: error: undefined symbol: __declspec(dllimport) omp_get_max_threads
+        >>> referenced by C:\\Users\\Choco\\Downloads\\llama.cpp-gfx906\\1\\llama.cpp-gfx906\\rocmbuild\\build3\\CMakeFiles\\CMakeScratch\\TryCompile-3u7pxh\\OpenMPTryFlag.c:5
+        >>>               CMakeFiles/cmTC_cbbeb.dir/OpenMPTryFlag.c.obj:(main)
+        clang: error: linker command failed with exit code 1 (use -v to see invocation)
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:71 (find_package)"
+      - "ggml/src/CMakeLists.txt:445 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-jvg09d"
+      binary: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-jvg09d"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd"
+      CMAKE_EXE_LINKER_FLAGS: "-Xlinker /force:multiple"
+      CMAKE_HIP_ARCHITECTURES: "gfx906"
+      CMAKE_MODULE_PATH: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/cmake/"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_fopenmplibomp"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-jvg09d'
+        
+        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_0f987
+        [1/2] C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\CLANG_~1.EXE   -fopenmp=libomp -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -MD -MT CMakeFiles/cmTC_0f987.dir/OpenMPTryFlag.cpp.obj -MF CMakeFiles\\cmTC_0f987.dir\\OpenMPTryFlag.cpp.obj.d -o CMakeFiles/cmTC_0f987.dir/OpenMPTryFlag.cpp.obj -c C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-jvg09d/OpenMPTryFlag.cpp
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\CLANG_~1.EXE -nostartfiles -nostdlib -fopenmp=libomp -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /force:multiple   -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_0f987.dir/OpenMPTryFlag.cpp.obj -o cmTC_0f987.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_0f987.lib -Xlinker /pdb:cmTC_0f987.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:71 (find_package)"
+      - "ggml/src/CMakeLists.txt:445 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-wql5jm"
+      binary: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-wql5jm"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd"
+      CMAKE_EXE_LINKER_FLAGS: "-Xlinker /force:multiple"
+      CMAKE_HIP_ARCHITECTURES: "gfx906"
+      CMAKE_MODULE_PATH: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/cmake/"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_fopenmplibiomp5"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-wql5jm'
+        
+        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_de7fc
+        [1/2] C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\CLANG_~1.EXE   -fopenmp=libiomp5 -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -MD -MT CMakeFiles/cmTC_de7fc.dir/OpenMPTryFlag.cpp.obj -MF CMakeFiles\\cmTC_de7fc.dir\\OpenMPTryFlag.cpp.obj.d -o CMakeFiles/cmTC_de7fc.dir/OpenMPTryFlag.cpp.obj -c C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-wql5jm/OpenMPTryFlag.cpp
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\CLANG_~1.EXE -nostartfiles -nostdlib -fopenmp=libiomp5 -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /force:multiple   -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_de7fc.dir/OpenMPTryFlag.cpp.obj -o cmTC_de7fc.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_de7fc.lib -Xlinker /pdb:cmTC_de7fc.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        FAILED: [code=1] cmTC_de7fc.exe 
+        C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\CLANG_~1.EXE -nostartfiles -nostdlib -fopenmp=libiomp5 -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /force:multiple   -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_de7fc.dir/OpenMPTryFlag.cpp.obj -o cmTC_de7fc.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_de7fc.lib -Xlinker /pdb:cmTC_de7fc.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        lld-link: error: could not open 'libiomp5md.lib': no such file or directory
+        clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:71 (find_package)"
+      - "ggml/src/CMakeLists.txt:445 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-8nkwmd"
+      binary: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-8nkwmd"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd"
+      CMAKE_EXE_LINKER_FLAGS: "-Xlinker /force:multiple"
+      CMAKE_HIP_ARCHITECTURES: "gfx906"
+      CMAKE_MODULE_PATH: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/cmake/"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-8nkwmd'
+        
+        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_b3c03
+        [1/2] C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\CLANG_~1.EXE   -fopenmp -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -MD -MT CMakeFiles/cmTC_b3c03.dir/OpenMPTryFlag.cpp.obj -MF CMakeFiles\\cmTC_b3c03.dir\\OpenMPTryFlag.cpp.obj.d -o CMakeFiles/cmTC_b3c03.dir/OpenMPTryFlag.cpp.obj -c C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-8nkwmd/OpenMPTryFlag.cpp
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\CLANG_~1.EXE -nostartfiles -nostdlib -fopenmp -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /force:multiple   -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_b3c03.dir/OpenMPTryFlag.cpp.obj -o cmTC_b3c03.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_b3c03.lib -Xlinker /pdb:cmTC_b3c03.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:71 (find_package)"
+      - "ggml/src/CMakeLists.txt:445 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-32ica7"
+      binary: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-32ica7"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd"
+      CMAKE_EXE_LINKER_FLAGS: "-Xlinker /force:multiple"
+      CMAKE_HIP_ARCHITECTURES: "gfx906"
+      CMAKE_MODULE_PATH: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/cmake/"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-32ica7'
+        
+        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_e36fe
+        [1/2] C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\CLANG_~1.EXE   -Xclang -fopenmp -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -MD -MT CMakeFiles/cmTC_e36fe.dir/OpenMPTryFlag.cpp.obj -MF CMakeFiles\\cmTC_e36fe.dir\\OpenMPTryFlag.cpp.obj.d -o CMakeFiles/cmTC_e36fe.dir/OpenMPTryFlag.cpp.obj -c C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-32ica7/OpenMPTryFlag.cpp
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\CLANG_~1.EXE -nostartfiles -nostdlib -Xclang -fopenmp -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /force:multiple   -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_e36fe.dir/OpenMPTryFlag.cpp.obj -o cmTC_e36fe.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_e36fe.lib -Xlinker /pdb:cmTC_e36fe.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        FAILED: [code=1] cmTC_e36fe.exe 
+        C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\CLANG_~1.EXE -nostartfiles -nostdlib -Xclang -fopenmp -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /force:multiple   -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_e36fe.dir/OpenMPTryFlag.cpp.obj -o cmTC_e36fe.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_e36fe.lib -Xlinker /pdb:cmTC_e36fe.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        lld-link: error: undefined symbol: __declspec(dllimport) omp_get_max_threads
+        >>> referenced by C:\\Users\\Choco\\Downloads\\llama.cpp-gfx906\\1\\llama.cpp-gfx906\\rocmbuild\\build3\\CMakeFiles\\CMakeScratch\\TryCompile-32ica7\\OpenMPTryFlag.cpp:5
+        >>>               CMakeFiles/cmTC_e36fe.dir/OpenMPTryFlag.cpp.obj:(main)
+        clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "C:/Program Files/AMD/ROCm/5.7/lib/cmake/hip/hip-config-amd.cmake:127 (check_cxx_compiler_flag)"
+      - "C:/Program Files/AMD/ROCm/5.7/lib/cmake/hip/hip-config.cmake:150 (include)"
+      - "ggml/src/ggml-hip/CMakeLists.txt:42 (find_package)"
+    checks:
+      - "Performing Test HIP_CLANG_SUPPORTS_PARALLEL_JOBS"
+    directories:
+      source: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-v5ug3b"
+      binary: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-v5ug3b"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd"
+      CMAKE_EXE_LINKER_FLAGS: "-Xlinker /force:multiple"
+      CMAKE_HIP_ARCHITECTURES: "gfx906"
+      CMAKE_MODULE_PATH: "C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/cmake/"
+    buildResult:
+      variable: "HIP_CLANG_SUPPORTS_PARALLEL_JOBS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-v5ug3b'
+        
+        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_42efd
+        [1/2] C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\CLANG_~1.EXE -DHIP_CLANG_SUPPORTS_PARALLEL_JOBS  -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17   -parallel-jobs=1 -MD -MT CMakeFiles/cmTC_42efd.dir/src.cxx.obj -MF CMakeFiles\\cmTC_42efd.dir\\src.cxx.obj.d -o CMakeFiles/cmTC_42efd.dir/src.cxx.obj -c C:/Users/Choco/Downloads/llama.cpp-gfx906/1/llama.cpp-gfx906/rocmbuild/build3/CMakeFiles/CMakeScratch/TryCompile-v5ug3b/src.cxx
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\AMD\\ROCm\\5.7\\bin\\CLANG_~1.EXE -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /force:multiple   -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_42efd.dir/src.cxx.obj -o cmTC_42efd.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_42efd.lib -Xlinker /pdb:cmTC_42efd.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        
+      exitCode: 0
+...

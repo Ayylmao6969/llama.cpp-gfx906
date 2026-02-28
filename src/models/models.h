@@ -531,14 +531,7 @@ private:
                 ggml_tensor * cur,
                         int   il);
 
-<<<<<<< HEAD
-    // returns pair of output and new state
-    std::pair<ggml_tensor *, ggml_tensor *> build_delta_net_chunking(...)
-    ...
-    std::pair<ggml_tensor *, ggml_tensor *> build_delta_net_autoregressive(...)
-    ...
-=======
->>>>>>> cc45f2ada (models : deduplicate delta-net graphs for Qwen family (#19597))
+
     ggml_tensor * build_norm_gated(
                 ggml_tensor * input,
                 ggml_tensor * weights,

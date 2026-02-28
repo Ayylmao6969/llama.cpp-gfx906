@@ -1,6 +1,8 @@
 #include "models.h"
 
 #include "llama-memory-recurrent.h"
+#define CHUNK_SIZE 64
+
 
 llm_build_qwen3next::llm_build_qwen3next(const llama_model & model, const llm_graph_params & params) :
     llm_build_delta_net_base(params), model(model) {
@@ -18,10 +20,8 @@ llm_build_qwen3next::llm_build_qwen3next(const llama_model & model, const llm_gr
     ggml_tensor * causal_mask =
         ggml_tri(ctx0, ggml_fill_inplace(ctx0, ggml_new_tensor_2d(ctx0, GGML_TYPE_F32, CHUNK_SIZE, CHUNK_SIZE), 1.0f),
                     GGML_TRI_TYPE_LOWER);
-
     ggml_tensor * identity = ggml_diag(ctx0, ggml_fill_inplace(ctx0, ggml_new_tensor_1d(ctx0, GGML_TYPE_F32, CHUNK_SIZE), 1.0f));
     ggml_tensor * diag_mask = ggml_add(ctx0, causal_mask, identity);
-
     ggml_build_forward_expand(gf, causal_mask);
     ggml_build_forward_expand(gf, identity);
     ggml_build_forward_expand(gf, diag_mask);
@@ -37,7 +37,8 @@ llm_build_qwen3next::llm_build_qwen3next(const llama_model & model, const llm_gr
         // Determine layer type and build appropriate attention mechanism
         if (hparams.is_recurrent(il)) {
             // Linear attention layer (gated delta net)
-            cur = build_layer_attn_linear(inp->get_recr(), cur, causal_mask, identity, diag_mask, il);
+        cur = build_layer_attn_linear(inp->get_recr(), cur, causal_mask, identity, diag_mask, il);
+
         } else {
             // Full attention layer
             cur = build_layer_attn(inp->get_attn(), cur, inp_pos, il);
@@ -340,6 +341,8 @@ ggml_tensor * llm_build_qwen3next::build_layer_attn_linear(
     cb(alpha_softplus, "a_softplus", il);
     ggml_tensor * gate = ggml_mul(ctx0, alpha_softplus, model.layers[il].ssm_a);  // -A_log.exp() * softplus
     cb(gate, "gate", il);
+    gate = ggml_cont_3d(ctx0, gate, num_v_heads, n_seq_tokens, n_seqs);
+
 
     // Get convolution states from cache
     ggml_tensor * conv_states_all = mctx_cur->get_r_l(il);
@@ -444,7 +447,7 @@ ggml_tensor * llm_build_qwen3next::build_layer_attn_linear(
     if (n_seq_tokens == 1) {
         attn_out = build_delta_net_autoregressive(q_conv, k_conv, v_conv, gate, beta, state, il);
     } else {
-        attn_out = build_delta_net_chunking(q_conv, k_conv, v_conv, gate, beta, state, causal_mask, identity, diag_mask, il);
+        attn_out = build_delta_net_chunking(q_conv, k_conv, v_conv, gate, beta, state, il);
     }
     ggml_tensor * output    = attn_out.first;
     ggml_tensor * new_state = attn_out.second;

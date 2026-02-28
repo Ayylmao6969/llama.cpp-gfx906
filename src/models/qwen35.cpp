@@ -5,7 +5,7 @@
 llm_build_qwen35::llm_build_qwen35(const llama_model & model, const llm_graph_params & params) :
 
 
-    llm_graph_context_mamba(params), model(model) {
+    llm_build_delta_net_base(params), model(model) {
     const size_t n_deepstack_layers = hparams.n_deepstack_layers;
     const int64_t n_embd = hparams.n_embd;
 
@@ -250,7 +250,7 @@ ggml_tensor * llm_build_qwen35::build_layer_attn_linear(
     ggml_tensor * z         = qkvz.second;
 
     ggml_tensor * beta = build_lora_mm(model.layers[il].ssm_beta, cur);
-    beta = ggml_reshape_4d(ctx0, beta, 1, num_v_heads, n_seq_tokens, n_seqs);
+    beta = ggml_reshape_4d(ctx0, beta, num_v_heads, 1, n_seq_tokens, n_seqs);
     cb(beta, "beta", il);
 
     beta = ggml_sigmoid(ctx0, beta);
@@ -266,7 +266,7 @@ ggml_tensor * llm_build_qwen35::build_layer_attn_linear(
     ggml_tensor * gate = ggml_mul(ctx0, alpha_softplus, model.layers[il].ssm_a);  // -A_log.exp() * softplus
     cb(gate, "gate", il);
 
-    gate = ggml_reshape_4d(ctx0, gate, 1, num_v_heads, n_seq_tokens, n_seqs);
+    gate = ggml_cont_3d(ctx0, gate, num_v_heads, n_seq_tokens, n_seqs);
 
     // Get convolution states from cache
     ggml_tensor * conv_states_all = mctx_cur->get_r_l(il);
